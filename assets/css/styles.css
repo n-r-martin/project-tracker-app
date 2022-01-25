@@ -11,7 +11,7 @@ html, * {
 }
 
 body {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 header#hero-header {
@@ -28,4 +28,5 @@ div#header-content {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 1em;
 }
