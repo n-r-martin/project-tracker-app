@@ -1,3 +1,32 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html, * {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-size: 1em;
+}
+
+header#hero-header {
+  height: 250px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}   
+
+div#header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   font-size: 1em;
 }
